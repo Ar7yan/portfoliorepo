@@ -1,0 +1,24 @@
+{
+  "name": "nextjs-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.88.7",
+    "@react-three/fiber": "^8.13.5",
+    "autoprefixer": "^10.4.19",
+    "framer-motion": "^12.23.22",
+    "lucide-react": "^0.378.0",
+    "next": "^14.2.3",
+    "postcss": "^8.4.38",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^3.4.3",
+    "three": "^0.159.0"
+  }
+}
