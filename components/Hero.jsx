@@ -48,15 +48,24 @@ const Hero = () => {
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start">
             {/* ✅ Resume Download Button */}
-            <motion.a
-              href="/Yudhveer_Resume1.pdf"
-              download
-              className="px-8 py-3 bg-gradient-to-r from-[#00ffff] to-[#0077ff] text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1"
+            
+          <motion.div
+              // 1. Animation properties go here on the wrapper
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Download Resume
-            </motion.a>
+              <a
+                // 2. The core download link properties go here on the standard <a> tag
+                href="/Yudhveer_resume2.pdf" 
+                download
+                target="_blank" // Optional: Opens the link in a new tab before download
+                
+                // 3. All your styling also goes on the <a> tag
+                className="px-8 py-3 bg-gradient-to-r from-[#00ffff] to-[#0077ff] text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1"
+              >
+                Download Resume
+              </a>
+            </motion.div>
 
             {/* Social Icons */}
             <div className="flex items-center gap-4 mt-4 sm:mt-0">
