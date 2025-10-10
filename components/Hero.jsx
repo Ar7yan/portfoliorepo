@@ -27,7 +27,7 @@ const Hero = () => {
         </Suspense>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 grid md:grid-cols-2 items-center gap-12">
+      <div className="container relative z-10 grid items-center gap-12 px-6 mx-auto md:grid-cols-2">
         {/* Left Column - Text */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -35,21 +35,21 @@ const Hero = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
           className="text-center md:text-left"
         >
-          <h1 className="text-5xl md:text-6xl font-extrabold text-white leading-tight mb-4">
+          <h1 className="mb-4 text-5xl font-extrabold leading-tight text-white md:text-6xl">
             Yudhveer Singh Panwar
           </h1>
           <h2 className="text-2xl text-[#00ffff] font-semibold mb-4">
             AI Student & Aspiring Developer
           </h2>
-          <p className="text-lg text-gray-300 max-w-xl mx-auto md:mx-0 mb-8">
+          <p className="max-w-xl mx-auto mb-8 text-lg text-gray-300 md:mx-0">
             I build intelligent, futuristic tech that bridges creativity and AI —
             from neural-inspired designs to smart digital systems.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4">
+          <div className="flex flex-col items-center justify-center gap-4 sm:flex-row md:justify-start">
             {/* ✅ Resume Download Button */}
             <motion.a
-              href="/Yudhveer_Resume.pdf"
+              href="/Yudhveer_Resume1.pdf"
               download
               className="px-8 py-3 bg-gradient-to-r from-[#00ffff] to-[#0077ff] text-white font-bold rounded-lg shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:-translate-y-1"
               whileHover={{ scale: 1.05 }}
